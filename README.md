@@ -17,9 +17,9 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Description
 
-Esse é o meu primeiro app com flutter usando arquitetura limpa, nesse app escolhi usar o firebase como backend por conta de ser mais simples do que criar um backend próprio, visando que o meu objeto era tentar aplicar a arquitetura limpa.
+This is my first app with flutter using clean architecture, in this app I chose to use firebase as a backend because it is simpler than creating my own backend, aiming that my object was to try to apply the clean architecture.
 
-O foco que eu tinha era de tentar aplicar a arquitetura limpa o mais desaclopada possível, claro que ainda contém alguma falhas minhas, mas como primeiro projeto achei aceitável, porém a minha maior dificuldade foi nos testes unitários sinto que não consegui aplicar bem o que vinha estudando, também senti que não estava indo como eu queria então parei de fazer os testes no meio do projeto, acho que ainda tenho que estudar mais  sobre testes.
-Mesmo assim acho que fui bem para um primeiro projeto irei tentar melhorar mais daqui para frente.
+The focus I had was to try to apply the clean architecture as detached as possible, of course it still contains some flaws of mine, but as a first project I found it acceptable, but my biggest difficulty was in the unit tests I feel I couldn't apply what came well studying, I also felt that I was not going as I wanted so I stopped taking the tests in the middle of the project, I think I still have to study more about tests.
+Even so, I think I did well for a first project and I will try to improve more from now on.
 
 
