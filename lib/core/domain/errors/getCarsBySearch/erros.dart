@@ -1,0 +1,5 @@
+abstract class GetCarsBySearchException implements Exception{}
+
+class FailureGetCarsBySearch extends GetCarsBySearchException{}
+
+class NoInternetConnectionGetCarsBySearch extends GetCarsBySearchException{}

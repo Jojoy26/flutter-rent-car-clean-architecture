@@ -1,0 +1,5 @@
+abstract class GetCarsByBrandException implements Exception{}
+
+class FailureGetCarsByBrand extends GetCarsByBrandException{}
+
+class NoInternetConnectionGetCarsByBrand extends GetCarsByBrandException{}

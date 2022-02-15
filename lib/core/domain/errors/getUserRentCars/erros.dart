@@ -1,0 +1,7 @@
+abstract class GetUserRentCarsException implements Exception{}
+
+class FailureGetUserRentCars extends GetUserRentCarsException{}
+
+class NoExistsRentsCollection extends GetUserRentCarsException{}
+
+class NoInternetConnectionGetUserRentCars extends GetUserRentCarsException{}
