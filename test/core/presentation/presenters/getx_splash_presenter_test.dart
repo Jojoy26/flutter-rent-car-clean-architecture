@@ -15,9 +15,12 @@ void main() {
   final userPresenter = MockGetxUserPresenter();
   final splashPresenter = GetxSplashPresenter(getCurrentUserUsecase: getCurrentUserUsecase, userPresenter: userPresenter);
   testWidgets('Must call a getCurrentUserUsecase', (tester) async {
+    
     when(() => getCurrentUserUsecase.call()).thenAnswer((invocation) => Future.value(Right(loggedUserTest)));
 
-    await splashPresenter.callGetCurrentUser();
+    await tester.runAsync(() async {
+      await splashPresenter.callGetCurrentUser();
+    });
     
     verify(() => getCurrentUserUsecase.call());
   });
@@ -25,7 +28,9 @@ void main() {
     when(() => getCurrentUserUsecase.call()).thenAnswer((invocation) => Future.value(Right(loggedUserTest)));
     when(() => userPresenter.setUser(loggedUserTest)).thenAnswer((invocation) { });
 
-    await splashPresenter.callGetCurrentUser();
+    await tester.runAsync(() async {
+      await splashPresenter.callGetCurrentUser();
+    });
     
     verify(() => userPresenter.setUser(loggedUserTest));
   });

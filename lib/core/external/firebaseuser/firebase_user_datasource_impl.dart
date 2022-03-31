@@ -128,6 +128,7 @@ class FirebaseUserDatasourceImpl implements UserDatasource {
         phoneNumber: googleUserCredential.user!.phoneNumber ?? "",
       );
     } on FirebaseAuthException catch (e){
+      print(e.code);
       if(e.code == "user-not-found"){
         throw UserNotFound();
       } else {
@@ -140,6 +141,7 @@ class FirebaseUserDatasourceImpl implements UserDatasource {
 
   @override
   Future<LoggedUser> getCurrentUser() async {
+    await auth.signOut();
     try {
       var user = auth.currentUser;
       if(user == null) throw Exception();
